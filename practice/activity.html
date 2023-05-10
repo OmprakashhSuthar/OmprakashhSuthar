@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="activity.js"></script>
+
+</head>
+
+<body>
+    <div class="article">
+        <input type="number" placeholder="Enter Number" name="num1" id="num1">
+        <input type="number" placeholder="Enter Number" name="num2" id="num2">
+        <input id="btn" type="button" value="submit">
+        <p id="output"></p>
+        <p id="result"></p>
+    </div>
+    <div class="article">
+        <form name="form" action="">
+            <div class="container">
+                <h1 id="randomnumber1" onload="randomnumbergrnerator"></h1>
+                +<h1 id="randomnumber2" onload="randomnumbergrnerator"></h1>
+            </div>
+            <input type="number" placeholder="Result" name="result" id="addition">
+            <input id="btn1" type="button" value="submit">
+            <p id="bValue"></p>
+        </form>
+    </div>
+    <!-- <p id="bValue"></p> -->
+    <div>
+        <input type="text" placeholder="Result" name="result" id="txt">
+        <button id="submirbutton">submit</button>
+    </div>
+</body>
+<script>
+    // let btn = document.getElementById('btn');
+    // btn.onclick = myFun;
+    // function myFun() {
+    //     let a = parseInt(document.getElementById('num1').value);
+    //     let b = parseInt(document.getElementById('num2').value);
+    //     console.log(a)
+    //     let op = document.getElementById('output');
+    //     op.style.backgroundColor = 'grey';
+    //     op.innerHTML = a + b;
+    //     let status = (a > b) ? "a is bigger" : "b is bigger"
+    //     document.getElementById('result').innerHTML = status;
+    //     document.getElementById('result').style.backgroundColor = 'grey';
+    //     // console.log(Math.round(Math.random() * 15));
+    // }
+
+
+    //activity 2
+
+    // let btn1 = document.getElementById('btn1');
+    // btn1.onclick = addition;
+    // let b = 1;
+    // let randomnumber;
+    // function randomnumbergrnerator() {
+    //     let randomnumber1 = Math.round(Math.random() * 20);
+    //     let randomnumber2 = Math.round(Math.random() * 20);
+    //     randomnumber = randomnumber1 + randomnumber2;
+    //     document.getElementById('randomnumber1').innerText = `what is ${randomnumber1}?`;
+    //     document.getElementById('randomnumber2').innerText = `${randomnumber2}`;
+    // }
+    // // let rans = Math.round(Math.random() * 10)
+    // // document.getElementById('randomnumber1').innerText = `what is ${rans}`;
+
+    // function addition() {
+    //     let res = parseInt(document.getElementById('addition').value);
+    //     document.form.reset();
+    //     console.log('res==' + res + ' ' + randomnumber);
+    //     // console.log(res === randomnumber)
+    //     if (res == randomnumber) {
+    //         console.log('if');
+    //         document.getElementById('bValue').innerHTML = b++;
+    //     } else {
+    //         console.log('else')
+    //         document.getElementById('bValue').innerHTML = b--;
+    //     }
+    //     document.getElementById('addition').value
+    //     randomnumbergrnerator();
+    // }
+                        // let date = new Date();
+                        // console.log(date.getSeconds())
+                                    // let a = new XMLHttpRequest();
+                                    // a.open("GET", "txt.php?name="+txt, "true");
+                                    // let myContainer = '';
+                                    // document.getElementById('submirbutton').addEventListener("click", myFun)
+                                    // function myFun() {
+                                    //     a.onreadystatechange = function () {
+                                    //         if (a.readyState == 4) {
+                                    //                 // console.log(this.responseText)
+                                    //                 // document.getElementById('bValue').innerHTML = this.responseText
+                                    //             console.log('ok')
+                                    //         }
+                                    //     }
+                                    // }
+                                    // console.log(a)
+                                    // a.send();
+</script>
+<style>
+    h1 {
+        display: flex;
+    }
+</style>
+
+</html>

@@ -60,16 +60,28 @@
 
 // let person1 = new fullName('Om', 'Suthar')
 // console.log(person1)
-function ran(min, max) {
-        let val = Math.floor(Math.random() * (max - min + 1))+ min;
-        // console.log('randomnumber' + Math.floor(Math.random() * (max - min + 1) + min))
-        // console.log('///////////////----')
-        // console.log((max - min + 1) + min)
-        // console.log('----///////')
-        // console.log('Max'+max) 
-        // console.log('Min'+min)
-        return val;
-}
-for (i = 0; i <= 5; i++) {
-        console.log(ran(4, 1))
-}
+// function ran(min, max) {
+//         let val = Math.floor(Math.random() * (max - min + 1)) + min;
+//         // console.log('randomnumber' + Math.floor(Math.random() * (max - min + 1) + min))
+//         // console.log('///////////////----')
+//         // console.log((max - min + 1) + min)
+//         // console.log('----///////')
+//         // console.log('Max'+max) 
+//         // console.log('Min'+min)
+//         return val;
+// }
+// for (i = 0; i <= 5; i++) {
+//         console.log(ran(4, 1))
+// }
+let arr1 = ['om', 1, 4, 7, 'pk', 'sk'];
+let arr2 = ['askjk', 'asdkjkas', 3, 7, 0, 27, 'ksajhdkj'];
+
+// let arr = arr1.concat(arr2)
+Array.prototype.push.apply(arr1, arr2);
+// console.log(arr1);
+// console.log(arr2);
+// console.log(arr1[3])
+// delete arr2[4]
+// console.log(arr2)
+// arr2.splice(7, 0)
+// console.log(arr2)

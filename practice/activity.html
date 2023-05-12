@@ -8,7 +8,28 @@
     <title>Activity</title>
     <link rel="stylesheet" href="style.css">
     <script src="activity.js"></script>
+    <script src="jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        if (jQuery) {
+            console.log('Ready')
+        } else {
+            console.log('not ready')
+        }
 
+        $(document).ready(function () {
+            $('.submirbutton').click(function () {
+                $('.bValue').text('Hey Omprakash')
+                $('.text1').html('Hello world')
+                $('.text2').html('Have a nice day')
+                $('#input').val('omprakash')
+                $('.txt').hide();
+                $('div').each(function(){
+                    console.log($(this).text())
+                })
+            })
+        });
+    </script>
 </head>
 
 <body>
@@ -27,13 +48,17 @@
             </div>
             <input type="number" placeholder="Result" name="result" id="addition">
             <input id="btn1" type="button" value="submit">
-            <p id="bValue"></p>
+            <p class="bValue">ompraksh</p>
+            <p class="text1"></p>
+            <p class="text2"></p>
+            <input type="text" id="input" class="input">
         </form>
     </div>
     <!-- <p id="bValue"></p> -->
     <div>
-        <input type="text" placeholder="Result" name="result" id="txt">
-        <button id="submirbutton">submit</button>
+        <input type="text" placeholder="Result" name="result" class="txt">
+        <button class="submirbutton">submit</button>
+        <p class="mainresult"></p>
     </div>
 </body>
 <script>

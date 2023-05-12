@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>
+            This is a paragraph 1
+        </p>
+        <p>
+            This is a paragraph 2
+        </p>
+        <ol>
+            <li><a href="logo.html">home</a></li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+        </ol>
+        <input type="text" name="input" id="input">
+        <button class="btn">ADD</button>
+        <div class="p1">ompraksah</div>
+        <div id="p1">djkk</div>
+    </div>
+</body>
+<style>
+    .p1 {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        border: 2px solid goldenrod;
+        border-radius: 2em;
+        color: white;
+        margin: 0px;
+        justify-content: center;
+        text-align: center;
+
+        display: flex;
+    }
+</style>
+<script>
+    document.getElementById('p1').addEventListener('click',function(){
+        let name = prompt('Enter name')
+        document.getElementById('p1').innerHTML = name;
+    })
+
+</script>
+
+</html>

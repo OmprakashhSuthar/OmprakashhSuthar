@@ -13,10 +13,10 @@
 
 <body>
     <div class="container">
-        <p>
+        <p class="p1">
             This is a paragraph 1
         </p>
-        <p>
+        <p class="p2">
             This is a paragraph 2
         </p>
         <ol>
@@ -45,16 +45,35 @@
         margin: 0px;
         justify-content: center;
         text-align: center;
-
+        display: flex;
+    }
+    .p2{
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        border: 2px solid black;
+        border-radius: 2em;
+        color: white;
+        margin: 0px;
+        justify-content: center;
+        text-align: center;
         display: flex;
     }
 </style>
-<script>
+<!-- <script>
     document.getElementById('p1').addEventListener('click',function(){
         let name = prompt('Enter name')
         document.getElementById('p1').innerHTML = name;
     })
 
+</script> -->
+<script>
+    //Arrow function in js
+    ((a, b, c) => {
+        console.log(a, b, c)
+        let value = a+b*c;
+        console.log(value)
+    })(5, 6, 7);
 </script>
 
 </html>

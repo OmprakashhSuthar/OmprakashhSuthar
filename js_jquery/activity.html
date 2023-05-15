@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="num1">1</p>
+        <p id="num2">1</p>
+        <p id="total"></p>
+        Total ::<input type="number" name="result" id="result" placeholder="Enter Total">
+        <button id="btn">Add</button>
+        <p id="points"></p>
+    </div>
+</body>
+<script>
+    //Random number generator
+    let number1;
+    let number2;
+    let total;
+    let b = 0;
+    function randomnumbergenerator() {
+        let num1 = document.getElementById('num1').innerHTML = Math.floor(Math.random() * 20);
+        let num2 = document.getElementById('num2').innerHTML = Math.floor(Math.random() * 20);
+        number1 = num1;
+        number2 = num2;
+        total = num1 + num2;
+    }
+    window.onload = randomnumbergenerator;
+    document.getElementById('btn').addEventListener('click', function () {
+        let num1 = parseInt(document.getElementById('result').value);
+        let result = parseInt(document.getElementById('result').value);
+        // console.log('result' + result)
+        // console.log('total ' + total)
+        // console.log(result == total)
+        console.log(b);
+        if (result == total) {
+            console.log('called if'+ b)
+            console.log(b++);
+            console.log(b+1);
+            // console.log('if' +number1);
+            // console.log('if' +number2);
+            document.getElementById('total').innerHTML = b++;
+            // randomnumbergenerator();
+        } else {
+            console.log('called else' + b)
+            console.log(b--);
+            console.log(b-1);
+            document.getElementById('total').innerHTML = b--;
+            // randomnumbergenerator();
+            // console.log('else' +number1)
+            // console.log('else' +number2)
+        }
+        document.getElementById('result').value = null;
+        randomnumbergenerator();
+    })
+</script>
+
+</html>

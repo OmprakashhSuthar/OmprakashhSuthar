@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="modal-body">
+            <span class="close">&times;</span>
+            <div class="modal-text">Hey<br>this is some text</div>
+        </div>
+    </div>
+    <button class="btn">Contact</button> -->
+    <div class="main">
+        <div class="el1">element 1</div>
+        <div class="el2">element 2</div>
+        <div class="el3">element 3</div>
+        <div class="el4">element 4</div>
+        <div class="el5">element 5</div>
+        <div class="el6">element 6</div>
+        <div class="el7">element 7</div>
+        <div class="el8">element 8</div>
+    </div>
+    <style>
+        /* .container {
+            height: 100%;
+            width: 100%;
+            z-index: 5;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: black;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .modal-body {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 50%;
+            min-height: 200px;
+        }
+
+        .close {
+            color: red;
+            float: right;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .close:hover {
+            color: black;
+            cursor: pointer;
+        } */
+        * {
+            box-sizing: border-box;
+           
+        }
+
+        .main {
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .main > div {
+            border: 1px solid black;
+            text-align: center;
+            padding: 2px;
+            min-height: 100px;
+            line-height: 100px;
+            width: 100px;
+        }
+    </style>
+    <script>
+        const btn = document.querySelector('.btn');
+        const close = document.querySelector('.close');
+        const cntnr = document.querySelector('.container')
+        btn.addEventListener('click', function () {
+            cntnr.style.display = 'block';
+        })
+        cntnr.addEventListener('click', closeEvent)
+        close.addEventListener('click', closeEvent)
+        function closeEvent() {
+            cntnr.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

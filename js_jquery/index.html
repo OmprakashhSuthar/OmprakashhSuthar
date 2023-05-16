@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <div class="container">
-        <p>
+    <!-- <div class="container">
+        <p class="p1">
             This is a paragraph 1
         </p>
-        <p>
+        <p id="p2">
             This is a paragraph 2
         </p>
         <ol>
@@ -32,6 +32,26 @@
         <button class="btn">ADD</button>
         <div class="p1">ompraksah</div>
         <div id="p1">djkk</div>
+    </div> -->
+    <div class="container">
+        <input type="text" class="matchFields" placeholder="Enter password" id="pass1">
+        <input type="text" class="matchFields" placeholder="Enter password again" id="pass2">
+        <button id="btn">click</button>
+        <div id="status">Status: </div>
+        <div class="selectoptions">
+            <select name="" id="select">
+                <option value="one">one</option>
+                <option value="two">two</option>
+                <option value="three">three</option>
+                <option value="four">four</option>
+            </select>
+        </div>
+        <div class="chckBox">
+            yes<input type="radio" name="yesno" id="yes" value="yes">
+            no<input type="radio" name="yesno" id="no" value="no"><br>
+            <input type="checkbox" name="Click" id="Click">Click me
+        </div>
+        
     </div>
 </body>
 <style>
@@ -45,16 +65,111 @@
         margin: 0px;
         justify-content: center;
         text-align: center;
-
         display: flex;
     }
+
+    .p2 {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        border: 2px solid black;
+        border-radius: 2em;
+        color: white;
+        margin: 0px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+    }
+
+    .green {
+        border: 2px solid rgb(156, 244, 156);
+    }
+
+    .red {
+        border: 2px solid rgb(232, 79, 79);
+    }
+
+    #status {
+        background-color: green;
+        color: white;
+        opacity: 0.5;
+        border: 2px solid black;
+    }
 </style>
-<script>
+<!-- <script>
     document.getElementById('p1').addEventListener('click',function(){
         let name = prompt('Enter name')
         document.getElementById('p1').innerHTML = name;
     })
 
+</script> -->
+<script>
+    //Arrow function in js
+    // ((a, b, c) => {
+    //     console.log(a, b, c)
+    //     let value = a+b*c;
+    //     console.log(value)
+    // })(5, 6, 7);
+    // let str1 = ['om', 'suthar', 1];
+    // let str2 = {
+    //     'first': 'om',
+    //     'second': 'suthar',
+    //     'Id': 1
+    // };
+    // const para = document.getElementById('p2')
+    // console.log(str1);
+    // console.log(str2);
+    // para.innerText = str1;
+    // let val = JSON.stringify(str2);
+    // para.innerText = val;
+
+    $(document).ready(function () {
+        //PASSWORD VALIDATION***
+        // $('#pass2').keyup(validate);
+        // $('#btn').click(validate
+        //     // , function () {
+        //     //     let val1 = $('#pass1').val();
+        //     //     let val2 = $('#pass2').val();
+
+        //     // }
+        // );
+        // function validate() {
+        //     let val1 = $('#pass1').val();
+        //     let val2 = $('#pass2').val();
+        //     if (val1 === val2) {
+        //         $('#status').text('working')
+        //         $('.matchFields').addClass('green')
+        //         console.log(val1);
+        //         console.log(val2)
+        //     } else {
+        //         $('#status').text('Not working')
+        //         $('.matchFields').addClass('red')
+        //     }
+        //     // if (val1.length > 0 && val2.length > 0) {
+        //     //     val1 = ' ';
+        //     //     val2 = ' '
+        //     // }
+        // }
+        //SELECT DROPDOWN LIST
+        // $('.container select').change(function () {
+        //     console.log($(this).val());
+        //     $('#status').text('selected '+$(this).val())
+        // })
+        // check box
+
+        $('#Click').on('change', function () {
+            console.log($(this))
+
+            if ($(this).prop('checked')) {
+                var sure = confirm('Are you sure')
+                this.checked = sure;
+            }
+            $('#status').text('Checked')
+        })
+        $('.chckBox input:radio').change(function () {
+            $('#status').text('changed radio to ' + $(this).val())
+        })
+    })
 </script>
 
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Food Delivery</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/FoodLogo-removebg-preview.png" alt="Logo">
+        </header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Menu</a>
+            <a href="">OrderOnline</a>
+            <a href="">GiftVoucher</a>
+            <a href="">Catering</a>
+            <a href="">Contact</a>
+        </nav>
+        <main>
+            <h1>Let's Eat</h1>
+            <p>Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Neque dolores velit eum explicabo,
+                nemo adipisci fuga tempora, vel quod vero asperiores
+                consequuntur doloremque perferendis earum enim aut
+                molestias totam laudantium!</p>
+            <a href="mailto:sutharomprakash628@gmail.com?subject=Reservation">MakeReservation</a>
+        </main>
+        <section class="maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40574.44312992732!2d73.15816562024729!3d22.300900824207535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1684387396360!5m2!1sen!2sin"
+                width="1024" height="300" style="border:0;" allowfullscreen></iframe>
+
+            <!-- <iframe width="1024" height="315" src="https://www.youtube.com/embed/TJFrgLcBf30"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+        </section>
+        <footer>
+            <p>Main St. Gotri,Vadodara,CopyWrite2010.@</p>
+        </footer>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('img').on('mouseover', function () {
+            $('img').animate({ height: "150px" }, 'slow');
+            $('img').animate({ height: "120px" }, 'slow');
+        })
+    });
+</script>
+
+</html>

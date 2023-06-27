@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <head>
+        <div class="container header-sectio flex">
+            <div class="img-logo">
+                <img src="assets/one.png" alt="">
+            </div>
+            <div class="signIn">
+                <a href="signIn.html" class="secondary-btn">Sign In</a>
+            </div>
+        </div>
+        <hr>
+    </head>
+    <div class="signUp-header">
+        <div class="flex container signUp-header-section">
+            <h1>SignUp to</h1>
+            <img src="assets/one.png" alt="">
+        </div>
+    </div>
+    <div class="signUp">
+        <div class="container signUp-section">
+            <form id="signUp-form" class="signup-contains flex">
+                <label for="Fname">First Name</label>
+                <input type="text" placeholder="Enter first name" name="Fname" required>
+                <label for="Lname">Last Name</label>
+                <input type="text" placeholder="Enter last name" name="Lname" required>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter email ex:abc@gmail.com" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password" name="password" required>
+                <div class="flex">
+                    <input id="checkbox" type="checkbox" style="margin-right: 10px;" required><span>i am not a
+                        robot</span>
+                </div>
+                <button class="primary-btn disabled" id="createAccount">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

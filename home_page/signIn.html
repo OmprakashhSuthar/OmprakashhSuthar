@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-In</title>
+</head>
+<body>
+    <head>
+        <div class="container header-sectio flex">
+            <div class="img-logo">
+                <img src="assets/one.png" alt="">
+            </div>
+        </div>
+        <hr>
+    </head>
+    <div class="signUp-header">
+        <div class="flex container signUp-header-section">
+            <h1>👋 WelCome Back</h1>
+        </div>
+    </div>
+    <div class="signIn-page">
+        <div class="container signIn-section">
+            <form id="signIn-form" class="signIn-contains flex">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter email ex:abc@gmail.com" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password" name="password" required>
+                <div class="flex">
+                    <input id="signInCheck" type="checkbox" style="margin-right: 10px;" required><span>i am not a robot</span>
+                </div>
+                <button class="primary-btn disabled" id="signin">Sign-In</button>
+                <div class="hr-container">
+                    <hr>
+                    <span class="centered-text">OR</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-part">
+        <div class="container flex footer-part-section">
+            <p>Don't have an account? <a href="signUp.html">Sign-Up</a></p>
+        </div>
+    </div>
+    <script src="signIn.js"></script>
+</body>
+
+</html>
